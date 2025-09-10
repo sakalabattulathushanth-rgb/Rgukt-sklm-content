@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGUKT Notes</title>
+  <style>
+  
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #0073e6;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Subject buttons */
+.main-btn {
+  background: #0073e6;
+  color: white;
+  padding: 12px 25px;
+  margin: 10px 0;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-btn:hover {
+  background: #005bb5;
+}
+
+/* Chapters inside each subject */
+.chapter-container {
+  display: none;
+  margin: 10px 0 20px 0;
+}
+
+.chapter-container a {
+  display: block;
+  background: #f0f0f0;
+  color: #0073e6;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px auto;
+  width: 220px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.chapter-container a:hover {
+  background: #0073e6;
+  color: white;
+}
+
+ 
+  
+  </style>  
+</head>
+<body>
+  <header>
+    <h1>RGUKT Notes</h1>
+  </header>
+
+  <main>
+    <h2>Select a Subject</h2>
+
+    <!-- Maths -->
+    <button class="main-btn" onclick="toggleSection('maths')">Maths</button>
+    <div id="maths" class="chapter-container">
+      <a href="maths/ch1.pdf" download>Chapter 1</a>
+      <a href="maths/ch2.pdf" download>Chapter 2</a>
+      <a href="maths/ch3.pdf" download>Chapter 3</a>
+      <a href="maths/ch4.pdf" download>Chapter 4</a>
+      <a href="maths/ch5.pdf" download>Chapter 5</a>
+      <a href="maths/ch6.pdf" download>Chapter 6</a>
+    </div>
+
+    <!-- Physics -->
+    <button class="main-btn" onclick="toggleSection('physics')">Physics</button>
+    <div id="physics" class="chapter-container">
+      <a href="physics/ch1.pdf" download>Chapter 1</a>
+      <a href="physics/ch2.pdf" download>Chapter 2</a>
+      <a href="physics/ch3.pdf" download>Chapter 3</a>
+      <a href="physics/ch4.pdf" download>Chapter 4</a>
+      <a href="physics/ch5.pdf" download>Chapter 5</a>
+      <a href="physics/ch6.pdf" download>Chapter 6</a>
+    </div>
+
+    <!-- Chemistry -->
+    <button class="main-btn" onclick="toggleSection('chemistry')">Chemistry</button>
+    <div id="chemistry" class="chapter-container">
+      <a href="chemistry/ch1.pdf" download>Chapter 1</a>
+      <a href="chemistry/ch2.pdf" download>Chapter 2</a>
+      <a href="chemistry/ch3.pdf" download>Chapter 3</a>
+      <a href="chemistry/ch4.pdf" download>Chapter 4</a>
+      <a href="chemistry/ch5.pdf" download>Chapter 5</a>
+      <a href="chemistry/ch6.pdf" download>Chapter 6</a>
+    </div>
+
+    <!-- English -->
+    <button class="main-btn" onclick="toggleSection('english')">English</button>
+    <div id="english" class="chapter-container">
+      <a href="english/ch1.pdf" download>Chapter 1</a>
+      <a href="english/ch2.pdf" download>Chapter 2</a>
+      <a href="english/ch3.pdf" download>Chapter 3</a>
+      <a href="english/ch4.pdf" download>Chapter 4</a>
+      <a href="english/ch5.pdf" download>Chapter 5</a>
+      <a href="english/ch6.pdf" download>Chapter 6</a>
+    </div>
+
+    <!-- Telugu -->
+    <button class="main-btn" onclick="toggleSection('telugu')">Telugu</button>
+    <div id="telugu" class="chapter-container">
+      <a href="telugu/ch1.pdf" download>Chapter 1</a>
+      <a href="telugu/ch2.pdf" download>Chapter 2</a>
+      <a href="telugu/ch3.pdf" download>Chapter 3</a>
+      <a href="telugu/ch4.pdf" download>Chapter 4</a>
+      <a href="telugu/ch5.pdf" download>Chapter 5</a>
+      <a href="telugu/ch6.pdf" download>Chapter 6</a>
+    </div>
+
+    <!-- IT -->
+    <button class="main-btn" onclick="toggleSection('it')">IT</button>
+    <div id="it" class="chapter-container">
+      <a href="it/ch1.pdf" download>Chapter 1</a>
+      <a href="it/ch2.pdf" download>Chapter 2</a>
+      <a href="it/ch3.pdf" download>Chapter 3</a>
+      <a href="it/ch4.pdf" download>Chapter 4</a>
+      <a href="it/ch5.pdf" download>Chapter 5</a>
+      <a href="it/ch6.pdf" download>Chapter 6</a>
+    </div>
+    
+        <!-- Biology -->
+    <button class="main-btn" onclick="toggleSection('biology')">Biology</button>
+    <div id="biology" class="chapter-container">
+      <a href="it/ch1.pdf" download>Chapter 1</a>
+      <a href="it/ch2.pdf" download>Chapter 2</a>
+      <a href="it/ch3.pdf" download>Chapter 3</a>
+      <a href="it/ch4.pdf" download>Chapter 4</a>
+      <a href="it/ch5.pdf" download>Chapter 5</a>
+      <a href="it/ch6.pdf" download>Chapter 6</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Developed by Thushanth</p>
+  </footer>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = (section.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
