@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes - RGUKT</title>
+  <style>
+  
+  body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.soft-btn {
+  display: block;
+  background: #ffffff;
+  color: #4a90e2;
+  text-decoration: none;
+  margin: 12px auto;
+  padding: 14px 20px;
+  border-radius: 25px; /* Soft rounded corners */
+  width: 200px;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: all 0.3s ease;
+}
+
+.soft-btn:hover {
+  background: #eaf3ff;
+  color: #2c6fba;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MID PAPERS</h1>
+  </header>
+
+  <main>
+    <h2>Select a Subject</h2>
+
+     <!-- Mid Exam Buttons -->
+  <a href="pdfs/mid1.pdf" target="_blank" class="soft-btn">Mid 1</a>
+  <a href="pdfs/mid2.pdf" target="_blank" class="soft-btn">Mid 2</a>
+  <a href="pdfs/mid3.pdf" target="_blank" class="soft-btn">Mid 3</a>
+    
+  </main>
+
+  <footer>
+    <center> <p>Developed by Thushanth</p> </center>
+  </footer>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = (section.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
