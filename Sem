@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGUKT Notes</title>
+  <style>
+  
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #0073e6;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Main Semester Buttons */
+.main-btn {
+  background: #0073e6;
+  color: white;
+  padding: 12px 25px;
+  margin: 10px 0;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-btn:hover {
+  background: #005bb5;
+}
+
+/* Subjects inside each semester */
+.subject-container {
+  display: none;
+  margin: 10px 0 20px 0;
+}
+
+.subject-container a {
+  display: block;
+  background: #f0f0f0;
+  color: #0073e6;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px auto;
+  width: 220px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.subject-container a:hover {
+  background: #0073e6;
+  color: white;
+}
+
+
+  
+ </style>
+</head>
+<body>
+  <header>
+    <h1>RGUKT Notes</h1>
+  </header>
+
+  <main>
+    <h2>Select Your Semester</h2>
+
+    <!-- Semester 1 -->
+    <button class="main-btn" onclick="toggleSection('sem1')">Semester 1</button>
+    <div id="sem1" class="subject-container">
+      <a href="sem1/maths.html">Maths</a>
+      <a href="sem1/physics.html">Physics</a>
+      <a href="sem1/chemistry.html">Chemistry</a>
+      <a href="sem1/english.html">English</a>
+      <a href="sem1/telugu.html">Telugu</a>
+      <a href="sem1/it.html">IT</a>
+    </div>
+
+    <!-- Semester 2 -->
+    <button class="main-btn" onclick="toggleSection('sem2')">Semester 2</button>
+    <div id="sem2" class="subject-container">
+      <a href="sem2/maths.html">Maths</a>
+      <a href="sem2/physics.html">Physics</a>
+      <a href="sem2/chemistry.html">Chemistry</a>
+      <a href="sem2/english.html">English</a>
+      <a href="sem2/telugu.html">Telugu</a>
+      <a href="sem2/it.html">IT</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Developed by Thushanth</p>
+  </footer>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = (section.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
